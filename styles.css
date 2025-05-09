@@ -12,6 +12,13 @@ header {
 nav {
     background-color: #e0e0e0;
     padding: 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+/* Navigation image styles */
+nav img {
+    width: 10%;
 }
 
 main {
@@ -26,12 +33,14 @@ footer {
     text-align: center;
 }
 
-/* Navigation list styles */
+/* Navigation list styles - commented out as requested */
+/*
 li {
     display: inline-block;
     width: 150px;
     margin: 5px;
 }
+*/
 
 /* Typography styles */
 h1 {
@@ -42,4 +51,43 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 20px;
+}
+
+/* Grid image styles */
+.grid img {
+    width: 100%;
+}
+
+/* Flex layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Skip to main content link */
+.skip {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
 } 
